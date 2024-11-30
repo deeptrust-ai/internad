@@ -7,6 +7,12 @@ authors = [
 ]
 dependencies = [
     "gradio>=5.7.1",
+    "soundfile>=0.12.1",
+    "cryptography>=44.0.0",
+    "numba>=0.57.1",
+    "llvmlite>=0.40.1",
+    "librosa>=0.10.2.post1",
+    "matplotlib>=3.9.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -24,3 +30,6 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/internad"]
+
+[tool.rye.scripts]
+demo = "python demo.py"
